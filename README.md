@@ -1,2 +1,2 @@
-# Figuras-Geometricas
-Aqui esta el MDJ y el Proyecto de Figuras geometricas que se hicieron en la clase de POO
+# Ejercicios-de-POO
+En este repositorio se encuentran ejercicios o problemas usando lenguaje de programacion Java y herramientaas (IDE: BlueJ, Netbeans), (UML) )
