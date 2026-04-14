@@ -6,9 +6,7 @@ public class Rectangulo extends Figuras
 
     //constructor
     public Rectangulo (double base, double altura){
-        if (base <= 0 || altura <= 0){
-            throw new IllegalArgumentException("La base y/o la altura deben ser mayores a 0 revise sus datos nuevamente porfavor");
-        }
+
         this.base = base;
         this.altura = altura;
     }
@@ -28,6 +26,11 @@ public class Rectangulo extends Figuras
     }
 
     public double calcularArea(){
+
+        if (this.base <= 0 || this.altura <= 0 || this.base == this.altura){
+            throw new IllegalArgumentException("La base y/o la altura de Rectangulo deben ser mayores a 0 y/o la base y altura no pueden ser iguales, verifique los datos dados");
+        }
+
         return base*altura;
     }
 

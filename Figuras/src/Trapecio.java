@@ -6,9 +6,7 @@ public class Trapecio {
 
     public Trapecio(double baseA, double baseB, double altura) {
 
-        if (baseA <= 0 || altura <= 0 || baseB <= 0){
-            throw new IllegalArgumentException("La baseA y/o baseB y/o la altura deben ser mayores a 0 revise sus datos nuevamente porfavor");
-        }
+
 
         this.baseA = baseA;
         this.baseB = baseB;
@@ -40,6 +38,10 @@ public class Trapecio {
     }
 
     public double calcularArea(){
+
+        if (this.baseA <= 0 || this.altura <= 0 || this.baseB <= 0){
+            throw new IllegalArgumentException("La baseA y/o baseB y/o la altura de Trapecio deben ser mayores a 0, verifique los datos dados");
+        }
 
         return ((baseA+baseB)/2)*altura;
 

@@ -4,9 +4,7 @@ public class Ovalo {
     private double altura;
 
     public Ovalo(double altura, double base) {
-        if (base <= 0 || altura <= 0 && base != altura){
-            throw new IllegalArgumentException("La base y/o la altura deben ser mayores a 0 revise sus datos nuevamente porfavor y/o la base y la altura no deben de ser iguales");
-        }
+
 
         this.altura = altura;
         this.base = base;
@@ -30,8 +28,11 @@ public class Ovalo {
 
     public double calcularArea(){
 
-        return Math.PI*(base*altura);
+        if (this.base <= 0 || this.altura <= 0 || this.base == this.altura){
+            throw new IllegalArgumentException("La base y/o la altura de Ovalo deben de ser mayores a 0 y/o la base y altura no pueden ser iguales, verifique los datos dados");
+        }
 
+        return Math.PI*(base*altura);
     }
 
     @Override

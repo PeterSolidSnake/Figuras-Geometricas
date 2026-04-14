@@ -3,10 +3,9 @@ public class Circulo extends Figuras
     private double radio;
 
     public Circulo (double radio){
-        if (radio > 0){
-            this.radio = radio;
-        }
-        else throw new IllegalArgumentException("El radio debe ser mayor a 0"); // IllegalArgumentException sirve para indicar que hay un error en los datos
+
+        this.radio = radio;
+
     }
 
     public double getRadio(){
@@ -18,6 +17,13 @@ public class Circulo extends Figuras
     }
 
     public double calcularArea(){
+
+        if (this.radio <= 0){
+
+            throw new IllegalArgumentException("El radio de circulo debe ser mayor a 0, verifique los datos dados");
+
+        }
+
         return Math.PI * (radio*radio);
     }
 

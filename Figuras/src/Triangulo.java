@@ -6,9 +6,7 @@ public class Triangulo extends Figuras
 
     //Constructor
     public Triangulo (int base, int altura){
-        if (base <= 0 || altura <= 0){
-            throw new IllegalArgumentException("La base y/o la altura deben ser mayores a 0 revise sus datos nuevamente porfavor");
-        }
+
         this.base = base;
         this.altura = altura;
     }
@@ -34,6 +32,10 @@ public class Triangulo extends Figuras
     }
 
     public double calcularArea(){
+
+        if (this.base <= 0 || this.altura <= 0){
+            throw new IllegalArgumentException("La base y/o la altura de Triangulo deben ser mayores a 0, verifique sus datos porfavor");
+        }
 
         return (base*altura)/2;
     }
