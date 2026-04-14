@@ -14,6 +14,12 @@ public class Main {
         Rectangulo r0 = new Rectangulo(5,8);
         System.out.println(r0);
 
+        Ovalo o0 = new Ovalo(9,20);
+        System.out.println(o0);
+
+        Trapecio tr0 = new Trapecio(5,8, 9);
+        System.out.println(tr0);
+
         System.out.println("\nResultado de las areas de cada valor dado a cada figura correspondiente");
 
     }

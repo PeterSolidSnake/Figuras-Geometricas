@@ -18,11 +18,11 @@ public class Circulo extends Figuras
     }
 
     public double calcularArea(){
-        return Math.PI * radio*radio;
+        return Math.PI * (radio*radio);
     }
 
     @Override
     public String toString() {
-        return "Circulo | Radio: " + radio + " | Área: " + calcularArea();
+        return "Circulo | Radio: " + radio + " | Area: " + calcularArea();
     }
 }

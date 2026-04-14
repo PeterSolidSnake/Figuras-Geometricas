@@ -7,7 +7,7 @@ public class Rectangulo extends Figuras
     //constructor
     public Rectangulo (double base, double altura){
         if (base <= 0 || altura <= 0){
-            throw new IllegalArgumentException("La base y/o la altura deben ser mayores a 0 revise sus datos nuevamente porfavor :D");
+            throw new IllegalArgumentException("La base y/o la altura deben ser mayores a 0 revise sus datos nuevamente porfavor");
         }
         this.base = base;
         this.altura = altura;
@@ -33,7 +33,7 @@ public class Rectangulo extends Figuras
 
     @Override
     public String toString() {
-        return "Rectangulo | Base: " + base + " | Altura: " + altura + " | Área: " + calcularArea();
+        return "Rectangulo | Base: " + base + " | Altura: " + altura + " | Area: " + calcularArea();
     }
 
 }
