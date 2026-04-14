@@ -5,19 +5,19 @@ public class Main {
         System.out.println("Bienvenido a Figuras");
         System.out.println("Detectando valores para Circulo, Triangulo y Rectangulo\n");
 
-        Circulo c0 = new Circulo(5);
+        Circulo c0 = new Circulo(1);
         System.out.println(c0);
 
-        Triangulo t0 = new Triangulo(7,7);
+        Triangulo t0 = new Triangulo(1,1);
         System.out.println(t0);
 
-        Rectangulo r0 = new Rectangulo(5,8);
+        Rectangulo r0 = new Rectangulo(1,2);
         System.out.println(r0);
 
-        Ovalo o0 = new Ovalo(19,20);
+        Ovalo o0 = new Ovalo(1,2);
         System.out.println(o0);
 
-        Trapecio tr0 = new Trapecio(8,0, 9);
+        Trapecio tr0 = new Trapecio(1, 2, 3);
         System.out.println(tr0);
 
         System.out.println("\nResultado de las areas de cada valor dado a cada figura correspondiente");

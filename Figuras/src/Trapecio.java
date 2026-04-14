@@ -39,8 +39,8 @@ public class Trapecio {
 
     public double calcularArea(){
 
-        if (this.baseA <= 0 || this.altura <= 0 || this.baseB <= 0){
-            throw new IllegalArgumentException("La baseA y/o baseB y/o la altura de Trapecio deben ser mayores a 0, verifique los datos dados");
+        if (this.baseA <= 0 || this.altura <= 0 || this.baseB <= 0 || this.baseA == this.baseB){
+            throw new IllegalArgumentException("La baseA y/o baseB y/o la altura de Trapecio deben ser mayores a 0 y/o la baseA y la baseB no pueden ser iguales, verifique los datos dados");
         }
 
         return ((baseA+baseB)/2)*altura;
