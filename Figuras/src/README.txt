@@ -1,4 +1,4 @@
-Version: 1.0.0
+Version: 1.0.1
 Autores: Pedro Ibarra, Camilo Alexander, Juan Puentes, Sharik Galvis
 
 Main hecho por Pedro Ibarra
