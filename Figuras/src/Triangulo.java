@@ -1,32 +1,32 @@
 public class Triangulo extends Figuras
 {
     //atributos
-    private int base;
-    private int altura;
+    private double base;
+    private double altura;
 
     //Constructor
-    public Triangulo (int base, int altura){
+    public Triangulo (double base, double altura){
 
         this.base = base;
         this.altura = altura;
     }
 
     //metodo getter
-    public int getBase(){
+    public double getBase(){
 
         return this.base;
     }
-    public int getAltura(){
+    public double getAltura(){
 
         return this.altura;
     }
 
     //metodo setter
-    public void setAltura(int altura){
+    public void setAltura(double altura){
 
         this.altura = altura;
     }
-    public void setBase(int base){
+    public void setBase(double base){
 
         this.base = base;
     }
