@@ -1,2 +1,2 @@
 # Figuras-Geometricas
-En este repositorio se encuentra el ejercicio de Figuras Geometricas, junto a su codigo y UML en .mdj
+Repositorio dedicado al Ejercicio de Figuras Geometricas, con su diagrama de clase en UML en archivo ".mdj" en base de POO y hecho con la estructura MVC (Modelo, Vista y Control).
